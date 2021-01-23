@@ -1,0 +1,99 @@
+.left {
+  margin-right: 5vw;
+}
+.container {
+  display: flex;
+  z-index: 9;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: center;
+  height: 100vh;
+  background: rgb(6, 104, 46);
+  padding: 30px;
+  position: fixed;
+  transition: 0.5s ease-in-out;
+  width: auto;
+}
+
+.logo-container {
+  color: white;
+  text-decoration: none;
+  display: flex;
+}
+.logo-container a {
+  color: white;
+  text-decoration: none;
+}
+.logo-container a h3 {
+  margin-left: 25px;
+}
+.logo-container svg,
+.links-container a svg {
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+.links-container a svg:hover {
+  transform: rotate(360deg);
+  transition: 0.5s ease-in-out;
+}
+.links-container a {
+  color: white;
+  display: flex;
+
+  text-decoration: none;
+}
+.links-container a h4 {
+  margin-left: 25px;
+}
+.links-container a h4:hover {
+  background: white;
+  color: rgb(6, 104, 46);
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-between;
+  height: 50%;
+}
+.off {
+  display: none;
+  transition: 0.5s ease-in-out;
+}
+.on {
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .left {
+    margin-right: 0vw;
+  }
+  .container {
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    height: 100vh;
+    background: rgb(6, 104, 46);
+    padding: 20px;
+    position: fixed;
+    transition: 0.5s ease-in-out;
+    width: auto;
+  }
+  .logo-container svg,
+  .links-container a svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+  }
+  .on {
+    display: block;
+    transition: 0.5s ease-in-out;
+    width: 100vw;
+  }
+}
